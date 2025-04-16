@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pupawstrous</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Pupawstrous Logo" class="logo"/>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Welcome to Pupawstrous</h1>
+            <p>The boldest, safest, most rewarding platform built for breeders, trainers, rescues, transporters — and now, buyers.</p>
+        </section>
+        <section class="roles">
+            <button>I’m a Dog Breeder</button>
+            <button>I’m a Dog Trainer</button>
+            <button>I’m a Dog Transporter</button>
+            <button>I’m a Dog Rescue</button>
+            <button>I’m a Puppy Buyer</button>
+        </section>
+        <section class="perks">
+            <h2>Why Join Pupawstrous?</h2>
+            <ul>
+                <li>Layaway options with full protection</li>
+                <li>Earn points & badges for visibility and perks</li>
+                <li>Join a trusted network of verified professionals</li>
+                <li>Exclusive referral rewards</li>
+                <li>Backed by billionaire-brand level experience</li>
+            </ul>
+        </section>
+    </main>
+    <div id="chatbot">
+        <div class="spot">
+            <p>🐾 Hi, I’m Spot — your Pupawstrous guide! Ask me anything or tap a quick question below:</p>
+            <div class="chat-options">
+                <button onclick="alert('Layaway lets buyers reserve puppies safely with scheduled payments, while protecting breeders with milestone tracking. No risks, all reward.')">What is Layaway?</button>
+                <button onclick="alert('Earn points for sales, reviews, and loyalty. Unlock badges, free listings, and get featured on our homepage.')">How Do I Earn Points?</button>
+                <button onclick="alert('Yes! All users are verified. No private sharing allowed. Safe layaway. Escrow options. Protected messaging.')">Is This Safe?</button>
+                <button onclick="alert('As a buyer, breeder, trainer, transporter, or rescue, you can connect, grow, and thrive through our community.')">What Can I Do Here?</button>
+            </div>
+            <div class="fallback">
+                <p>If I can’t help, it may be above my <strong>pawgrade</strong> 🐾. Want to ask the Pack Leader himself?</p>
+                <button onclick="document.getElementById('contact-form').style.display='block'">Yes</button>
+                <button>No <span style="font-size: 0.8em;">(go back to ask more questions)</span></button>
+            </div>
+        </div>
+        <div id="contact-form" style="display:none;">
+            <h3>Ask the Pack Leader</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required/><br/>
+                <input type="email" placeholder="Your Email" required/><br/>
+                <textarea placeholder="Your Question" required></textarea><br/>
+                <button type="submit">Send to Pack Leader</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
