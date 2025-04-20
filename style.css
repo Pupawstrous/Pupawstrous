@@ -1,0 +1,112 @@
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #333333;
+}
+.logo {
+  display: block;
+  margin: 30px auto;
+  width: 350px;
+}
+.hero {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+.subheadline {
+  font-size: 1.1em;
+  color: #666666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.roles-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  align-items: start;
+}
+.role-info {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  color: #444;
+}
+.role-info ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.role-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.role-buttons button {
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 18px;
+  background: #f38b42;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.role-buttons button:hover {
+  background: #d66e2d;
+}
+.counter {
+  text-align: center;
+  margin: 30px 0;
+}
+.counter-box {
+  display: inline-block;
+  background: #f38b42;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 1.2em;
+}
+.why-join {
+  background: #f0f0f0;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: center;
+}
+.why-join h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+.faq {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px 40px;
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+.faq-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.faq-item p {
+  margin: 0;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .roles-grid {
+    display: block;
+    padding: 0 20px;
+  }
+  .role-info, .role-buttons {
+    margin-bottom: 20px;
+  }
+  .role-buttons button {
+    width: 100%;
+  }
+}
