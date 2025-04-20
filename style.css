@@ -1,0 +1,16 @@
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; background:#fff; color:#222; }
+.logo { display:block; margin:20px auto; width:300px; }
+.hero { text-align:center; padding:20px; }
+.subheadline { font-size:1.1em; color:#555; text-align:center; max-width:600px; margin:0 auto; line-height:1.4; }
+.roles { max-width:400px; margin:20px auto; }
+.roles button { display:block; width:100%; margin:10px 0; padding:15px; font-size:18px; background:#f38b42; color:#fff; border:none; border-radius:8px; cursor:pointer; }
+.why-join { background:#f9f9f9; padding:20px; margin:20px; border-radius:10px; max-width:600px; margin-left:auto; margin-right:auto; text-align:center; }
+.why-join h2 { font-size:1.5em; margin-bottom:10px; }
+.faq { max-width:600px; margin:20px auto; padding:10px; }
+.faq h2 { font-size:1.3em; margin-bottom:10px; }
+.faq dl { margin:0; }
+.faq dt { font-weight:bold; margin-top:10px; }
+.faq dd { margin-left:20px; margin-bottom:10px; }
+.signup-counter { text-align:center; font-size:1.2em; margin:20px; color:#f38b42; }
+footer { text-align:center; padding:10px; font-size:0.9em; color:#777; }
