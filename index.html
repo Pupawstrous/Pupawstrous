@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pupawstrous</title>
+  <style>
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background: #ffffff; color: #333; }
+    .logo { display: block; margin: 10px auto; width: 350px; }
+    .hero { text-align: center; padding: 20px 20px 10px; }
+    .hero h1 { font-size: 2em; margin-bottom: 10px; }
+    .subheadline { font-size: 1.1em; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.5; }
+    .roles-grid { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 20px; max-width: 1000px; margin: 20px auto; align-items: start; }
+    .role-info { background: #f9f9f9; padding: 20px; border-radius: 8px; font-size: 0.95em; color: #444; }
+    .role-info ul { list-style: disc; padding-left: 20px; }
+    .role-buttons { display: flex; flex-direction: column; }
+    .role-buttons button { margin: 10px 0; padding: 15px; font-size: 18px; background: #f38b42; color: white; border: none; border-radius: 8px; cursor: pointer; transition: background 0.3s; }
+    .role-buttons button:hover { background: #d66e2d; }
+    .counter { text-align: center; margin: 30px 0; }
+    .counter-box { display: inline-block; background: #f38b42; color: white; padding: 15px 25px; border-radius: 8px; font-size: 1.2em; }
+    .why-join { background: #f0f0f0; padding: 25px; margin: 20px auto; max-width: 800px; border-radius: 10px; text-align: center; }
+    .why-join h2 { font-size: 1.6em; margin-bottom: 10px; }
+    .faq { max-width: 800px; margin: 20px auto; padding: 0 20px 40px; }
+    .faq-item { margin-bottom: 20px; }
+    .faq-item h3 { font-size: 1.2em; margin-bottom: 5px; }
+    .faq-item p { margin: 0; color: #555; }
+    @media (max-width: 768px) {
+      .roles-grid { display: block; padding: 0 20px; }
+      .role-info, .role-buttons { margin-bottom: 20px; }
+      .role-buttons button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Pupawstrous Logo" class="logo">
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Welcome to Pupawstrous</h1>
+      <p class="subheadline">From breeders to buyers and trainers to product sellers,<br>connecting every part of the dog community.</p>
+    </section>
+    <section class="roles-grid">
+      <div class="role-info left">
+        <ul>
+          <li>Instantly reach verified buyers & pros</li>
+          <li>Secure transactions with layaway & escrow</li>
+        </ul>
+      </div>
+      <div class="role-buttons">
+        <button>I’m a Dog Breeder</button>
+        <button>I’m a Dog Trainer</button>
+        <button>I’m a Dog Transporter</button>
+        <button>I’m a Dog Rescue</button>
+        <button>I’m a Puppy Buyer</button>
+        <button>I Sell Dog Products</button>
+      </div>
+      <div class="role-info right">
+        <ul>
+          <li>Earn points & badges for top visibility</li>
+          <li>Grow with referral rewards & analytics</li>
+        </ul>
+      </div>
+    </section>
+    <section class="counter">
+      <div class="counter-box">
+        <span class="count">1,234</span>
+        <span>Signups and climbing...</span>
+      </div>
+    </section>
+    <section class="why-join">
+      <h2>Why Join Pupawstrous?</h2>
+      <p>Join the world’s most exclusive dog network. Gain unparalleled visibility, earn premium badges, and unlock advanced growth tools built for elite pros.</p>
+    </section>
+    <section class="faq">
+      <div class="faq-item">
+        <h3>What is Pupawstrous?</h3>
+        <p>The premier dog marketplace connecting breeders, trainers, transporters, rescues, buyers, and sellers in one trusted community.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How does Layaway work?</h3>
+        <p>Reserve puppies with scheduled payments while breeders get milestone payments upon confirmed delivery.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How are contacts protected?</h3>
+        <p>No private info shared; all messaging and payments happen securely in-platform.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
