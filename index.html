@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pupawstrous | Where the Dog World Connects</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fff; color: #333; text-align: center; }
+    header { padding: 30px 0 10px; }
+    .logo { width: 400px; }
+    .main-grid { display: flex; justify-content: center; align-items: flex-start; gap: 40px; padding: 20px; flex-wrap: wrap; }
+    .side-panel { flex: 1 1 260px; text-align: left; padding: 10px 0 10px 40px; }
+    .side-panel ul { list-style: none; padding: 0; }
+    .side-panel li { margin-bottom: 12px; font-weight: 500; position: relative; padding-left: 25px; }
+    .side-panel li::before { content: "🐾"; position: absolute; left: 0; }
+    .button-panel { display: flex; flex-direction: column; gap: 15px; width: 280px; }
+    .button-panel button { padding: 14px; font-size: 16px; font-weight: bold; border: none; border-radius: 8px; background-color: #f38b42; color: white; cursor: pointer; transition: 0.3s; }
+    .counter { margin: 20px auto; font-size: 1.2rem; color: #f38b42; font-weight: bold; }
+    .form-section { margin: 30px auto; max-width: 600px; }
+    form input, form select { width: 90%; padding: 12px; margin: 10px 0; font-size: 16px; border: 1px solid #ccc; border-radius: 6px; }
+    form button { padding: 12px 24px; font-size: 16px; font-weight: bold; background-color: #f38b42; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    .faq-section { background: #fef6f0; padding: 40px 20px; margin-top: 30px; }
+    .faq-item { background: #fff; border-left: 4px solid #f38b42; padding: 15px; margin: 10px auto; border-radius: 8px; max-width: 900px; text-align: left; }
+    .faq-item h3 { margin: 0 0 8px; color: #f38b42; }
+  </style>
+  <script>
+    let counter = localStorage.getItem('signupCounter') || 436;
+    setInterval(() => {
+      counter++;
+      localStorage.setItem('signupCounter', counter);
+      document.getElementById('signup-counter').innerText = counter + " Signups";
+    }, 60000);
+    function hideFormSuccess() {
+      document.getElementById("signup-form").style.display = "none";
+      document.getElementById("form-success").style.display = "block";
+    }
+  </script>
+
+    <script>
+      function showForm(role) {
+        document.getElementById('signup-form').style.display = 'block';
+        document.getElementById('form-role').value = role;
+      }
+
+      function hideFormSuccess() {
+        document.getElementById("signup-form").style.display = "none";
+        document.getElementById("form-success").style.display = "block";
+      }
+    </script>
+    </head>
+<body>
+  <header>
+    <img src="logo.png" alt="Pupawstrous Logo" class="logo" />
+  </header>
+
+  <div class="main-grid">
+    <div class="side-panel" style="padding-right: 20px; margin-right: 0;"><ul><li>Verified buyers & sellers only</li><li>Layaway & escrow payments</li><li>Earn points & badges</li><li>Analytics by state & role</li><li>Bulk listing uploads</li><li>Referral rewards</li><li>No private info shared</li><li>Custom profile builder</li><li>Community tools & reviews</li></ul></div>
+    <div class="button-panel">
+      <button onclick="showForm('Dog Breeder')">I’m a Dog Breeder</button><button onclick="showForm('Dog Trainer')">I’m a Dog Trainer</button><button onclick="showForm('Dog Transporter')">I’m a Dog Transporter</button><button onclick="showForm('Dog Rescue')">I’m a Dog Rescue</button><button onclick="showForm('Puppy Buyer')">I’m a Puppy Buyer</button><button onclick="showForm('Dog Product Seller')">I Sell Dog Products</button>
+    </div>
+    <div class="side-panel"><ul><li>Mobile friendly interface</li><li>Secure messaging system</li><li>Optional insurance programs</li><li>Downloadable reports</li><li>Fast account approval</li><li>Free basic listings</li><li>Integrated chatbot/FAQ</li><li>24/7 support</li><li>Profile boost with badges</li></ul></div>
+  </div>
+
+  <div class="counter"><span id="signup-counter">436 Signups</span></div>
+
+  <div class="form-section" id="signup-form" style="display:none;">
+    <form action="https://formspree.io/f/myzwglpb" method="POST" onsubmit="hideFormSuccess(); return true;" id="signup-form" onsubmit="hideFormSuccess(); return true;">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="email" name="email" placeholder="Your Email Address" required />
+<input type="tel" name="phone" placeholder="Your Phone Number" required />
+      <select name="role" required>
+        <option value="">Select Your Role</option>
+        <option>Dog Breeder</option><option>Dog Trainer</option><option>Dog Transporter</option><option>Dog Rescue</option><option>Puppy Buyer</option><option>Dog Product Seller</option>
+      </select>
+      <input type="text" name="state" placeholder="Your U.S. State" required />
+      <button type="submit">Join the Pack</button>
+    </form>
+    <div id="form-success" style="display:none;"><h3 style="color:#f38b42;">🎉 Thank you for joining the Pupawstrous pack!</h3></div>
+  </div>
+
+  <section class="faq-section">
+    <div class="faq-item"><h3>What is Pupawstrous?</h3><p>An online marketplace uniting breeders, trainers, transporters, rescues, buyers, and dog product sellers.</p></div>
+    <div class="faq-item"><h3>How does layaway work?</h3><p>Buyers make payments over time while breeders receive secure milestone payments once delivery is confirmed.</p></div>
+    <div class="faq-item"><h3>Do I need a website to join?</h3><p>No, all tools and profiles are built right into Pupawstrous.</p></div>
+    <div class="faq-item"><h3>How secure are transactions?</h3><p>All payments are encrypted and held in escrow until both parties confirm satisfaction.</p></div>
+    <div class="faq-item"><h3>Is Pupawstrous free?</h3><p>Yes! Basic accounts are free. We only charge for premium upgrades or boosted listings.</p></div>
+    <div class="faq-item"><h3>How do referrals work?</h3><p>Invite friends or clients and earn rewards every time they complete a transaction.</p></div>
+    <div class="faq-item"><h3>Can I edit my profile?</h3><p>Yes, you can manage and update your listings and info at any time from your dashboard.</p></div>
+    <div class="faq-item"><h3>Is this mobile-friendly?</h3><p>Absolutely. Pupawstrous is designed to work on all screen sizes and devices.</p></div>
+    <div class="faq-item"><h3>Do you offer customer support?</h3><p>We provide 24/7 email support for all users.</p></div>
+    <div class="faq-item"><h3>Can I sell physical dog products?</h3><p>Yes! We support both services and physical goods — create your store and start selling.</p></div>
+  </section>
+</body>
+</html>
+<div class="main-flex-wrapper" style="display: flex; justify-content: center; align-items: flex-start; gap: 60px; flex-wrap: nowrap;">
+  <div class="side-panel left" style="max-width: 280px;">
+    <ul>
+      <li>Verified buyers & sellers only</li>
+      <li>Layaway & escrow payments</li>
+      <li>Earn points & badges</li>
+      <li>Analytics by state & role</li>
+      <li>Bulk listing uploads</li>
+      <li>Referral rewards</li>
+      <li>No private info shared</li>
+      <li>Custom profile builder</li>
+      <li>Community tools & reviews</li>
+    </ul>
+  </div>
+
+  <div class="button-panel" style="display: flex; flex-direction: column; gap: 12px;">
+    <button onclick="showForm('Dog Breeder')">I’m a Dog Breeder</button>
+    <button onclick="showForm('Dog Trainer')">I’m a Dog Trainer</button>
+    <button onclick="showForm('Dog Transporter')">I’m a Dog Transporter</button>
+    <button onclick="showForm('Dog Rescue')">I’m a Dog Rescue</button>
+    <button onclick="showForm('Puppy Buyer')">I’m a Puppy Buyer</button>
+    <button onclick="showForm('Dog Product Seller')">I Sell Dog Products</button>
+  </div>
+
+  <div class="side-panel right" style="max-width: 280px;">
+    <ul>
+      <li>Mobile friendly interface</li>
+      <li>Secure messaging system</li>
+      <li>Optional insurance programs</li>
+      <li>Downloadable reports</li>
+      <li>Fast account approval</li>
+      <li>Free basic listings</li>
+      <li>Integrated chatbot/FAQ</li>
+      <li>24/7 support</li>
+      <li>Profile boost with badges</li>
+    </ul>
+  </div>
+</div>
+
